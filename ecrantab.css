@@ -1,0 +1,101 @@
+
+
+@media (max-width: 1220px) {
+    .title{
+        margin: auto 200px;
+    }
+    h4.title{
+        margin: 20px 200px;
+    }
+}
+
+@media (max-width: 1030px){
+    .slider-1{
+        max-width: 350px;
+    }
+
+    .slider-1 p{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    .slider-2{
+        max-width: 350px;
+    }
+
+    .slider-2 p{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    .box{
+        max-width: 350px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .paraph{
+        margin: 20px 200px;
+
+    }
+}
+
+@media (max-width: 660px) {
+    .left-accueil{
+        order: 2;
+    }
+    .right-accueil{
+        order:1;
+    }
+
+    .container-accueil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        margin:auto;
+    }
+    h4.title{
+        margin: 15px auto;
+    }
+    .paraph{
+        margin: 15px auto;
+
+    }
+    .container-competences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   .slider-1{
+    margin-bottom: 10px;
+   }
+   .container-formations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .progress{
+    height: 20px;
+    font-size: 15px;
+   }
+
+   .box{
+    margin: 10px auto;
+   }
+
+   .box-img{
+    display: none;
+   }
+   .li-loisir{
+    padding:10px;
+   }
+   .hobby{
+    font-size: 18px;
+   }
+
+}
