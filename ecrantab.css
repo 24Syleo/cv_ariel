@@ -47,6 +47,14 @@
         order:1;
     }
 
+     .slider-1{
+        max-width: 200px;
+    }
+
+     .slider-2{
+        max-width: 350px;
+    }
+
     .container-accueil{
         display: flex;
         flex-direction: column;
