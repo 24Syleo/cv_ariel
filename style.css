@@ -313,27 +313,27 @@ p.poste{
 .progress {
     text-align: center;
     height: 45px;
-    width: 100%;
     background-color: #ddc3a5;
-    animation: fondBarre 5s infinite;
     font-size: 35px;
+}
+
+.fp{
+    width: 100%;
+    animation: evolution 3s ease-in-out infinite;
 }
 
 /** appel de l'anim pour le background color modifiant la couleur de fond*/
 
-@keyframes fondBarre {
-    0%,
-    30% {background-color: #ddc3a5;}
-    30%,
-    60%{background-color: #e0a96d;}
-    60%,
-    80%{background-color: #201e20;}
-    100%{background-color: #ddc3a5;}
+@keyframes evolution {
+   from {
+    width:0;
+   }
   }
 
   /** largeur de fond pour l'anglais */
-#ang {
+.a{
     width: 66%;
+    animation: evolution 3s ease-in-out infinite;
 }
 
 /* loisirs */
