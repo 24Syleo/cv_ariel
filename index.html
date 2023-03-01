@@ -1,24 +1,26 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Ariel</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="ecrantab.css">
+    <title>CV-ariel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>
-    <!-- en tête du cv coordonnée d'ariel à gauche et photo à droite -->
-    <section id="accueil">
-        <div class="container-accueil">
-            <div class="left-accueil">
-                <h1 class="title" id="ariel">Ariel Victorio Magnane</h1>
-                <h2>Developper web</h2>
+<body class="mt-4">
+    <header class="container text-center mb-3">
+        <h1 class="title ombre mb-4">ARIEL VICTORIO MAGNANE</h1>
+        <div class="row justify-content-around">
+            <div class="col-sm-5 text-center text-sm-start">
                 <address>
+                    <h2>Developper web</h2>
                     <p>Avenue bois de la chapelle, 101</p>
                     <p>1213 Onex</p>
                     <a href="tel:0041764316296">076 431 62 96</a><br>
@@ -26,131 +28,150 @@
                     <a href="./images/CV-ARIEL-MAGNANE-ELECTRO-V4-1.pdf" target="_blank">Cv PDF</a>                    
                 </address>
             </div>
-            <div class="right-accueil">
-                <div>
-                    <img src="./images/ariel.jpeg" alt="ariel">
-                </div>
+            <div class="col-sm-5 ariel">
+                <img src="./images/ariel.jpeg" alt="ariel" class="img-thumbnail img-fluid m-3 ombre rounded-5">
             </div>
         </div>
-    </section>
-    <!-- compétences paragraphe suivie de slider qui présente les skills à gauche fact à droite logiciel-->
-    <section id="competences">
-        <h1 class="title header">Compétences</h1>
-        <p class="paraph">Grande habilité manuelle, très bonnes connaissances en électrotechnique, esprit logique, minutieux, autonome,
-            persévérant, dynamique, créatif et orienté solutions. Passionné par les arts visuels, autodidacte dans l’audio-visuel,
-            apprenant facilement.
-        </p>
-        <h4 class="title">Qualité et logiciels</h4>
-        <div class="container-competences">
-                <div class="left-competence">
-                    <div class="slider-container slider-1">
-                        <div class="slider">
-                            <p>Effectuer des dépannages sur des machines életroniques en tous genres</p>
-                            <p>Développer des projets électroniques: concevoir, assembler et tester des modules</p>
-                            <p>Développer, dimensionner et tester les cartes PCB</p>
-                            <p>Programmer des machines et robots</p>
-                            <p>Appliquer des protocoles de communication entre les machines</p>
-                            <p>Respecter et appliquer le cahier des charges selon les normes en vigueur</p>
-                            <p>Rédiger des rapports</p>
-                            <p>Effectuer des dépannages sur des machines életroniques en tous genres</p>
+    </header>
+    <section id="competence"  class="container mb-3">
+        <h1 class="title text-center ombre mb-4">compétences</h1>
+        <div class="container text-center">
+            <div class="row justify-content-between">
+                <div class="col-lg-3 col-md-5">
+                    <h4 class="title ombre mb-3">qualités</h4>
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p class="text-start fw-bold">Effectuer des dépannages sur des machines életroniques en tous genres</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Développer des projets électroniques: concevoir, assembler et tester des modules</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Développer, dimensionner et tester les cartes PCB</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Programmer des machines et robots</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Appliquer des protocoles de communication entre les machines</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Respecter et appliquer le cahier des charges selon les normes en vigueur</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Rédiger des rapports</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <p class="fw-bolder text-start">Grande habilité manuelle, très bonnes connaissances en électrotechnique, esprit logique, minutieux, autonome,
+                        persévérant, dynamique, créatif et orienté solutions. Passionné par les arts visuels, autodidacte dans l’audio-visuel,
+                        apprenant facilement.</p>
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    <h4 class="title ombre mb-3">logiciels</h4>
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p class="text-start fw-bold">Programmation: C, C#, Processing</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">Industrie: Kicad, Inkscape</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="text-start fw-bold">MS Office: Word, Excel, PowerPoint, Visio</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="right-competence">
-                    <div class="slider-container slider-2">
-                        <div class="sliders">
-                            <p>Programmation: C, C#, Processing</p>
-                            <p>Industrie: Kicad, Inkscape</p>
-                            <p>MS Office: Word, Excel, PowerPoint, Visio</p>
-                            <p>Programmation: C, C#, Processing</p>
+            </div>
+        </div>
+    </section>
+    <section id="experiences" class="container mb-3">
+        <h1 class="title ombre text-center">expériences</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="container-timeline">
+                <div class="exp ombre p-1">
+                    <p class="date ms-2">YOCTOPUCE – Cartigny – Déc. 2022</p>
+                    <p class="poste ms-2">Stagiaire développement de projet</p>
+                </div>
+                <div class="exp ombre p-1">
+                    <p class="date ms-2">AU COIN MOUSSE – Genève Janv. 2022 – Juillet 2022</p>
+                    <p class="poste ms-2">Serveur / Caissier</p>
+                </div>
+                <div class="exp ombre p-1">
+                    <p class="date ms-2">AUDIO CLUB – Carouge 2019 – 2022</p>
+                    <p class="poste ms-2">Responsable Vestiaire / Caissier</p>
+                </div>
+                <div class="exp ombre p-1">
+                    <p class="date ms-2">ADESIV – Meyrin 2018 – 2020</p>
+                    <p class="poste ms-2">Technicien bénévole</p>
+                </div>
+                <div class="exp ombre p-1">
+                    <p class="date ms-2">EWOK Cuisine Asiatique – Carouge Avr. – Aout. 2017</p>
+                    <p class="poste ms-2">Caissier / Aide- Cuisine</p>
+                </div>
+                <div class="exp ombre p-1">
+                    <p class="date ms-2">LEM International SA, PLO – Genève Fév. – Mar. 2015</p>
+                    <p class="poste ms-2">Stagiaire en production & gestion de projet</p>
+                </div>
+            </div>  
+
+        </div>
+    </section>
+    <section id="formation" class="container">
+        <h1 class="title ombre text-center mb-4">formations</h1>
+        <div class="container text-center">
+            <div class="row justify-content-sm-center justify-content-lg-between">
+                <div class="col-md-3 mb-4">
+                    <div class="card ombre rounded-5">
+                        <img src="./images/diplome.jpg" alt="formations" class="card-img-top img-fluid rounded-5 d-none d-lg-block">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Diplôme Technicien ES (diplôme non obtenu)</h6>
+                            <p class="card-text">Genève – Cfra-eng-Technique2016 – 2018</p>
                         </div>
                     </div>
                 </div>
-        </div>
-    </section>
-    <!-- une ligne de temps présentant les expériences en face de chaque point une carte triangle et point element before de la div carte -->
-    <section id="experiences">
-        <h1 class="title header">Expériences et bénévolats</h1>
-        <div class="centrer">
-        <div class="container-timeline">
-            <div class="exp">
-                <p class="date">YOCTOPUCE – Cartigny – Déc. 2022</p>
-                <p class="poste">Stagiaire développement de projet</p>
-            </div>
-            <div class="exp">
-                <p class="date">AU COIN MOUSSE – Genève Janv. 2022 – Juillet 2022</p>
-                <p class="poste">Serveur / Caissier</p>
-            </div>
-            <div class="exp">
-                <p class="date">AUDIO CLUB – Carouge 2019 – 2022</p>
-                <p class="poste">Responsable Vestiaire / Caissier</p>
-            </div>
-            <div class="exp">
-                <p class="date">ADESIV – Meyrin 2018 – 2020</p>
-                <p class="poste">Technicien bénévole</p>
-            </div>
-            <div class="exp">
-                <p class="date">EWOK Cuisine Asiatique – Carouge Avr. – Aout. 2017</p>
-                <p class="poste">Caissier / Aide- Cuisine</p>
-            </div>
-            <div class="exp">
-                <p class="date">LEM International SA, PLO – Genève Fév. – Mar. 2015</p>
-                <p class="poste">Stagiaire en production & gestion de projet</p>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- 2 cartes en colonne représentant ses diplomes-->
-    <section id="formation">
-        <h1 class="title header">Formation</h1>
-        <div class="container-formations">
-            <div class="box">
-                <div class="box-img">
-                    <img src="./images/diplome.jpg" alt="logo-diplome">
-                </div>
-                <div class="box-parah">
-                    <p class="diplome">Diplôme Technicien ES (diplôme non obtenu)</p>
-                    <p class="dipLieu">Genève – CFP-Technique2016 – 2018</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                    <img src="./images/diplome.jpg" alt="logo-diplome">
-                </div>
-                <div class="box-parah">
-                    <p class="diplome">CFC Electronique</p>
-                    <p class="dipLieu">Genève – CFP-Technique2012 - 2016</p>
+                <div class="col-md-3">
+                    <div class="card ombre rounded-5">
+                        <img src="./images/diplome.jpg" alt="formations" class="card-img-top img-fluid rounded-5 d-none d-lg-block">
+                        <div class="card-body text-start">
+                            <h6 class="card-title">Diplôme Technicien ES (diplôme non obtenu)</h6>
+                            <p class="card-text">Genève – Cfra-eng-Technique2016 – 2018</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- progress bar coder en div pour imbriquer le text  -->
-    <section id="langue">
-        <h1 class="title header">Langues</h1>
-        <div class="centrer">
-            <div class="progress-border">
-                <div class="progress fp">Français</div>
+    <section id="langue" class="container mt-5">
+        <h1 class="title ombre text-center mb-4">langues</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="bordure ombre">
+                <div class="barre fra-por">Français</div>
             </div>
-            <div class="progress-border">
-                <div class="progress fp">Portugais</div>
+            <div class="bordure ombre">
+                <div class="barre fra-por">Portugais</div>
             </div>
-            <div class="progress-border">
-                <div class="progress a">Anglais</div>
+            <div class="bordure ombre">
+                <div class="barre eng">Anglais</div>
             </div>
         </div>
     </section>
-    <!-- les loisirs d'ariel -->
-    <section id="loisir">
-        <h1 class="title header">Centres d'intérêt</h1>
-        <div class="centrer">
-            <ul class="hobby">
-                <li class="li-loisir">Photographie de paysage, live et portrait</li>
-                <li class="li-loisir">Guitare électrique et classique</li>
-                <li class="li-loisir">Cinéphile</li>
-                <li class="li-loisir">Gamer</li>
-                <li class="li-loisir">Vélo et volley-ball</li>
-            </ul>
-        </div>
+    <section id="hobby" class="container mt-2">
+        <h1 class="title ombre text-center mb-4">centre d'intérêt</h1>
+        <ul>
+            <li class="ombre mb-3 fw-bold p-3 rounded-4 bi bi-camera2"> Photographie de paysage, live et portrait</li>
+            <li class="ombre mb-3 fw-bold p-3 rounded-4 bi bi-music-note-beamed"> Guitare électrique et classique</li>
+            <li class="ombre mb-3 fw-bold p-3 rounded-4 bi bi-film"> Cinéphile</li>
+            <li class="ombre mb-3 fw-bold p-3 rounded-4 bi bi-joystick"> Gamer</li>
+            <li class="ombre mb-3 fw-bold p-3 rounded-4 bi bi-bicycle"> Vélo et volley-bal</li>
+        </ul>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </body>
 </html>
